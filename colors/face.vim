@@ -77,7 +77,7 @@ function! s:HL(group, ...) " {{{
     let spc = "NONE"
 
     " Face
-    if exists("a:1") 
+    if exists("a:1")
         if type(a:1) == type("")
             exe "highlight! link" a:group a:1
             return
@@ -87,7 +87,7 @@ function! s:HL(group, ...) " {{{
     endif
 
     " Background
-    if exists("a:2") 
+    if exists("a:2")
         if type(a:2) == type([])
             let bgs = [get(a:2, 0, "NONE"), get(a:2, 1, "NONE")]
         elseif type(a:2) == type(0)
@@ -96,7 +96,7 @@ function! s:HL(group, ...) " {{{
     endif
 
     " Foreground
-    if exists("a:3") 
+    if exists("a:3")
         if type(a:3) == type([])
             let fgs = [get(a:3, 0, "NONE"), get(a:3, 1, "NONE")]
         elseif type(a:3) == type(0)
@@ -184,7 +184,7 @@ call s:HL("Title", ['bold', 'underline'])
 " Syntax
 call s:HL("Comment", ['italic'], 153)
 
-call s:HL("Constant", ['underline'])
+call s:HL("Constant")
 call s:HL("String", [], 254)
 
 call s:HL("Statement", ['bold'])

@@ -1,4 +1,4 @@
-" Name: vim-face [colorscheme]
+" Name: vim-hiliter [colorscheme]
 " Author: Case Duckworth <acdw@acdw.net>
 " URL:
 " License: MIT

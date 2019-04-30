@@ -1,4 +1,4 @@
-# vim-face
+# vim-hiliter
 
 I've been inspired by colorschemes like [nofrils][] to make a very minimal vim
 colorscheme using font faces to delineate syntactical differences.  This is

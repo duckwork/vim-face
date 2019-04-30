@@ -10,12 +10,8 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name = "face"
+let g:colors_name = "hiliter"
 " }}}
-augroup ColorschemeDevelopment " {{{
-    au!
-    au BufWritePost face.vim colo face
-augroup END " }}}
 " List of xcolors {{{
 let s:xcolors = [
     \ "#000000", "#800000", "#008000", "#808000", "#000080",
